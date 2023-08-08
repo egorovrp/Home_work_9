@@ -2,7 +2,16 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-void Rekursion (int number) //на вход принимается число от пользователя N
+Console.Clear();
+
+int GetNum(string message)
+{
+    Console.Write(message);
+	int num = int.Parse(Console.ReadLine()!);
+	return num;
+}
+
+void Rekursion (int number) 
 {   
     if (number != 1)
     {
@@ -18,7 +27,8 @@ void Rekursion (int number) //на вход принимается число о
     
     }
 }
-    
-Rekursion(8);
+
+int N = GetNum("Введите число N:");    
+Rekursion(N);
 
 
